@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 2px solid #c7c7c7;
+  padding: 20px 0 20px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.logorectangle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  padding: 0 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+main {
+  margin: 25px 0px 24px 0;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logolinks {
+  font-size: 20px;
+  font-family: "AnonymousPro-Bold", sans-serif;
+  font-weight: 700;
+}
+
+.collection {
+  font-family: "AnonymousPro-Bold", sans-serif;
+  font-size: 48px;
+  margin: 25px 0 25px 0;
+  display: flex;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.sneaker {
+  border: 0;
+  border-radius: 10px;
+  padding: 24px;
+  background-color: white;
+  font-size: 26px;
+}
+
+.sneaker img {
+
+  justify-content: center;
+}
+
+.sneaker {
+  transition: transform 0.3s, box-shadow 0.3s;
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.sneaker:hover {
+  transform: translateY(-10px);
+  box-shadow: 5px 20px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 10px;
+  font-family: "AnonymousPro-Regular", sans-serif;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 10px;
+  font-family: "AnonymousPro-Regular", sans-serif;
+}
+
+h3 {
+  margin: 0;
+  text-align: left;
+  margin-top: 30px;
+  font-family: "AnonymousPro-Bold", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.footer {
+  background-color: #121723;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footercon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logofooter {
+  text-decoration: none;
+  margin-top: 1px;
+}
+
+.logofooter img {
+  padding: 32px 0 32px 0;
+  height: auto;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "AnonymousPro-Regular";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  gap: 24px;
+}
+
+.socials a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__line {
+  border: none;
+  border-top: 1px solid #c7c7c7;
+  width: 1300px;
+  margin-bottom: 18px;
+}
+
+.copy {
+  color: #c7c7c7;
+  text-align: center;
+  font-family: "AnonymousPro-Regular";
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "AnonymousPro-Bold";
+  src: url(fonts/AnonymousPro-Bold.ttf);
+}
+
+@font-face {
+  font-family: "AnonymousPro-Regular";
+  src: url(fonts/AnonymousPro-Regular.ttf);
+}
+
+@media (max-width: 767px) {
+  .column {
+    grid-template-columns: 1fr;
+    padding: 16px 0 16px 0;
+    justify-items: center;
+  }
+
+  .sneaker img {
+    width: 250px;
+    margin: 0 16px;
+  }
+
+  .collection {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 32px;
+  }
+
+  .sneaker {
+    width: min-content;
+  }
+
+  .logorectangle li {
+    margin: 24px 0;
+  }
+
+  .header {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 16px 0;
+    width: 100%;
+  }
+
+  .logorectangle {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .logo {
+    margin: 0 auto;
+    padding-top: 24px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 16px 0;
+    width: 100%;
+  }
+  .footercon {
+    flex-direction: column;
+    width: 100%;
+  }
+  .logofooter {
+    margin: 0 auto;
+  }
+  .footer__line {
+    width: 100%;
+    margin: 16px 0 16px 0;
+  }
+}

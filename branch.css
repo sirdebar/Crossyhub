@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "AnonymousPro-Bold";
+  src: url(fonts/AnonymousPro-Bold.ttf);
+}
+
+@font-face {
+  font-family: "AnonymousPro-Regular";
+  src: url(fonts/AnonymousPro-Regular.ttf);
+}
+/* header */
+
+header {
+  background-color: #fff;
+  border-bottom: 2px solid #c7c7c7;
+  padding: 20px 0 20px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.logorectangle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo img {
+  max-width: 100%; 
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  padding: 0 10px;
+  font-size: 20px;
+  font-family: "AnonymousPro-Bold", sans-serif;
+  font-weight: 700;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  background-color: #F1F1F1;
+}
+
+/* card */
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card__background {
+  background-color: #fff;
+  border-radius: 50px;
+  margin: 32px 0;
+  padding: 48px;
+  width: 1160px;
+  display: block;
+}
+
+.main {
+  display: flex;
+  gap: 32px;
+}
+ 
+span {
+  font-family: 'AnonymousPro-Regular', sans-serif;
+font-size: 20px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.info__psevdoTable__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0 ;
+  border-bottom: 1px solid var(--color-text-bigcard);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-text-bigcard);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 10px;
+  font-family: "AnonymousPro-Regular", sans-serif;
+}
+
+.content__cardBig__wrapper {
+  padding-top: 32px;
+  color: var(--color-text-bigcard);
+}
+
+.description__cardBig__body {
+  max-width: 506px;
+  display: flex;
+  flex-direction: column;
+  line-height: 28px;
+  color: var(--color-text-bigcard);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.psevdoTable__cardBig__body {
+  flex: 1;
+  margin-top: 24px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 28px;
+  font-family: "AnonymousPro-Regular", sans-serif;
+}
+
+.title___psevdoTable {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--color-text-bigcard);
+  border-bottom: 1px solid var(--color-text-bigcard);
+  padding-bottom: 20px;
+}
+
+.value__info__psevdoTable {
+  margin-left: 24px ;
+  text-align: right;
+}
+
+.main__text{
+  display: flex;
+}
+
+.description{
+  flex: 1;
+  align-items: center;
+  display: flex;
+  margin: 24px 24px 0 0;
+}
+
+hr {
+  display: flex;
+  flex-direction: row;
+}
+
+.card__sneaker {
+  display: flex;
+  justify-content: center;
+}
+
+.card__sneaker img {
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.card__name {
+  font-family: "AnonymousPro-Regular", sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.card__surname {
+  font-family: "AnonymousPro-Regular";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  padding-top: 24px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "AnonymousPro-Regular", sans-serif;
+}
+
+/* footer */
+.footer {
+  background-color: #121723;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footercon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logofooter {
+  text-decoration: none;
+  margin-top: 1px;
+}
+
+.logofooter img {
+  padding: 32px 0 32px 0;
+  height: auto;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "AnonymousPro-Regular";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  gap: 24px;
+}
+
+.socials a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__line {
+  border: none;
+  border-top: 1px solid #c7c7c7;
+  width: 1160px;
+  margin-bottom: 18px;
+}
+
+.copy {
+  color: #c7c7c7;
+  text-align: center;
+  font-family: "AnonymousPro-Regular";
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+/* Хедер */
+.logorectangle li {
+  margin: 24px 0;
+}
+
+.header {
+  flex-direction: column;
+  text-align: center;
+  padding: 16px 0;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.logorectangle {
+  flex-direction: column;
+}
+
+.logo {
+  margin: 0 auto;
+  padding-top: 24px;
+}
+
+/* Кард */
+
+.card__background {
+  width: 343px;
+  padding: 24px;
+  margin: 0 auto;
+  display: block;
+  justify-content: center;
+  overflow:visible
+}
+
+.card__sneaker img {
+  width: 295px;
+  height: 172px;
+}
+
+.main__text{
+  flex-direction: column;
+}
+
+.card__name {
+  font-family: "AnonymousPro-Regular";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+
+.card__surname {
+  font-family: "AnonymousPro-Regular";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+
+.description {
+  margin: 32px 0 32px 0;
+}
+
+/* Футер */
+
+.footer {
+  flex-direction: column; 
+  text-align: center; 
+  padding: 16px 0; 
+  margin-top: 24px;
+  width: 100%;
+}
+.footercon {
+  flex-direction: column; 
+  width: 100%;
+}
+.logofooter {
+  margin: 0 auto; 
+}
+.footer__line {
+  width: 100%; 
+  margin: 16px 0 16px 0;
+}
+
+}
